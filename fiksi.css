@@ -1,0 +1,131 @@
+.body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 25px !important;
+    margin-left: 15px;
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Efek bayangan */
+}
+
+.custom-search {
+    width: 450px !important;
+    border-radius: 25px !important;
+    margin-left: 70px;
+}
+
+.dropdown-toggle {
+    font-weight: 700;
+}
+
+.navbar-collapse {
+    margin-left: 10% !important;
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.judul {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category {
+    margin-bottom: 40px;
+    padding: 0 100px;
+    /* Tambahkan space kiri kanan */
+}
+
+.category h2 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-around;
+    /* Memberi jarak antar item */
+    flex-wrap: wrap;
+}
+
+.book-item {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 22%;
+    /* Lebar sedikit lebih besar, tapi tetap compact */
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.book-item:hover {
+    color: #00A7DC;
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.book-item h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.book-item p {
+    font-size: 12px;
+    color: #333;
+}
+
+.footerhome {
+    background-color: #F0EDED;
+}
+
+.footer-line {
+    border: none;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.footerlist {
+    font-size: 15px !important;
+}
+
+.fw-bold {
+    font-size: 15px !important;
+    gap: -50px !important;
+}
