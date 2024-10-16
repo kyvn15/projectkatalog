@@ -16,6 +16,26 @@
     /* Efek bayangan */
 }
 
+.breadcrumb {
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000 ;
+}
+
+.pembeda {
+    color: #000;
+}
+
+.link2 {
+    text-decoration: none;
+    color: #000;
+}
+
 .custom-search {
     width: 450px !important;
     border-radius: 25px !important;
@@ -27,51 +47,19 @@
 }
 
 .navbar-collapse {
-    margin-left: 2%;
+    margin-left: 10%;
 }
 
 .navbar-nav {
     gap: 25px;
 }
 
-.auth-buttons {
-    margin-left: 56px;
-    display: flex;
-    gap: 15px;
-}
-
-.auth-buttons a {
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.login {
-    border-color: #000;
-    color: #333;
-}
-
-.login:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.register {
-    border-color: #00A7DC;
-    color: #00A7DC;
-}
-
-.register:hover {
-    background-color: #00A7DC;
-    color: #fff;
-}
-
-.container {
+.content {
     display: flex;
     gap: 30px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
 .book-cover img {
@@ -106,19 +94,6 @@
     margin: 10px 0;
 }
 
-.share-btn {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.share-btn:hover {
-    background-color: #ddd;
-}
-
 .book-meta {
     margin-top: 20px;
 }
@@ -127,7 +102,8 @@
     margin-bottom: 5px;
 }
 
-.softcover, .hardcover {
+.softcover,
+.hardcover {
     display: inline-block;
     margin-right: 10px;
     background-color: #f0f0f0;
@@ -137,8 +113,16 @@
     margin-top: 20px;
 }
 
-.buy-btn {
+.softcover:hover{
     background-color: #00A7DC;
+}
+
+.hardcover:hover {
+    background-color: #00A7DC;
+}
+
+.buy-btn {
+    background-color: #4cae4c;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -149,7 +133,7 @@
 }
 
 .buy-btn:hover {
-    background-color: #4cae4c;
+    background-color: #00A7DC;
 }
 
 .book-description {

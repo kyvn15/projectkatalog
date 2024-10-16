@@ -104,15 +104,14 @@
 }
 
 h1 {
-    text-align: left;
     font-size: 24px;
     margin-bottom: 20px;
+    font-weight: 700 !important;
+    margin-left: 130px;
 }
 
 .buku-terlaris-section {
     width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
     background-color: #e0e0e0;
     padding: 20px;
     border-radius: 10px;
@@ -122,10 +121,12 @@ h1 {
 .buku-terlaris-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .buku-terlaris-image {
     flex-basis: 20%;
+    margin-right: 60%;
     position: relative;
 }
 
@@ -150,6 +151,7 @@ h1 {
     margin-right: 20px;
     text-align: center;
     width: 160px;
+    text-decoration: none;
 }
 
 .book-item img {
@@ -161,6 +163,7 @@ h1 {
 .book-item h3 {
     font-size: 14px;
     margin-bottom: 10px;
+    color: #000;
 }
 
 .book-item p {

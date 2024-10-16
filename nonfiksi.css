@@ -26,46 +26,11 @@
 }
 
 .navbar-collapse {
-    margin-left: 2%;
+    margin-left: 10%;
 }
 
 .navbar-nav {
     gap: 25px;
-}
-
-.auth-buttons {
-    margin-left: 56px;
-    display: flex;
-    gap: 15px;
-}
-
-.auth-buttons a {
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    font-size: 16px;
-    transition: background-color 0.3s, border-color 0.3s;
-}
-
-.login {
-    border-color: #000;
-    color: #333;
-}
-
-.login:hover {
-    background-color: #000;
-    color: #fff;
-}
-
-.register {
-    border-color: #00A7DC;
-    color: #00A7DC;
-}
-
-.register:hover {
-    background-color: #00A7DC;
-    color: #fff;
 }
 
 .judul {
@@ -112,8 +77,9 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 10px;
-    width: 22%; /* Lebar sedikit lebih besar, tapi tetap compact */
+    width: 15%; /* Lebar sedikit lebih besar, tapi tetap compact */
     text-align: center;
+    height: 10%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     text-decoration: none;
@@ -137,7 +103,7 @@ h1 {
 }
 
 .book-item p {
-    font-size: 12px;
+    font-size: 14px;
     color: #333;
 }
 

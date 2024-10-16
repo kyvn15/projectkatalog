@@ -63,6 +63,11 @@
     border-radius: 8px;
     margin-right: 10px;
     background-color: #f4f4f4;
+    text-decoration: none;
+}
+
+.step:hover {
+    background-color: #00aaff;
 }
 
 .step-number {
@@ -74,8 +79,12 @@
 }
 
 .step.pembayaran {
-    background-color: #00aaff;
+    background-color: #f4f4f4;
     color: white;
+}
+
+.step.pembayaran:hover {
+    background-color: #00aaff;
 }
 
 .content {
