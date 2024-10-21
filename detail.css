@@ -24,7 +24,7 @@
 
 .link {
     text-decoration: none;
-    color: #000 ;
+    color: #000;
 }
 
 .pembeda {
@@ -113,26 +113,11 @@
     margin-top: 20px;
 }
 
-.softcover:hover{
+.softcover:hover {
     background-color: #00A7DC;
 }
 
 .hardcover:hover {
-    background-color: #00A7DC;
-}
-
-.buy-btn {
-    background-color: #4cae4c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-.buy-btn:hover {
     background-color: #00A7DC;
 }
 
