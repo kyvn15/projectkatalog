@@ -19,8 +19,8 @@
         JUDUL BUKU : <br> <input type="text" name="judul_buku"  /> <br><br>
         KATEGORI : <br>
         <label>
-            <input type="radio" name="kategori" value="FIKSI" required> FIKSI
-            <input type="radio" name="kategori" value="NON-FIKSI" required> NON-FIKSI
+            <input type="radio" name="kategori" value="1" required> FIKSI
+            <input type="radio" name="kategori" value="2" required> NON-FIKSI
         </label><br><br>
         DESKRIPSI BUKU : <br> <input type="textarea" name="deskripsi"  /> <br><br>
         PENERBIT : <br> <input type="text" name="penerbit"  /> <br><br>
