@@ -24,15 +24,15 @@
     
     //*  ALTERNATIF *//
 
-    //echo "<p><strong>Judul Buku:</strong> $judul_buku</p>";
-    //echo "<p><strong>Kategori:</strong> $kategori</p>";
-    //echo "<p><strong>Deskripsi Buku:</strong> $deskripsi</p>";
-    //echo "<p><strong>Penerbit:</strong> $penerbit</p>";
-    //echo "<p><strong>Tanggal Terbit:</strong> $tanggal_terbit</p>";
-    //echo "<p><strong>ISBN:</strong> $isbn</p>";
-    //echo "<p><strong>Jumlah Halaman:</strong> $jumlah_halaman</p>";
-    //echo "<p><strong>Harga:</strong> Rp. $harga</p>";
-    //echo "<p><strong>Stok:</strong> $stok</p>";
+    echo "<p><strong>Judul Buku:</strong> $judul_buku</p>";
+    echo "<p><strong>Kategori:</strong> $kategori</p>";
+    echo "<p><strong>Deskripsi Buku:</strong> $deskripsi</p>";
+    echo "<p><strong>Penerbit:</strong> $penerbit</p>";
+    echo "<p><strong>Tanggal Terbit:</strong> $tanggal_terbit</p>";
+    echo "<p><strong>ISBN:</strong> $isbn</p>";
+    echo "<p><strong>Jumlah Halaman:</strong> $jumlah_halaman</p>";
+    echo "<p><strong>Harga:</strong> Rp. $harga</p>";
+    echo "<p><strong>Stok:</strong> $stok</p>";
 
     //*    *//
 
