@@ -21,13 +21,8 @@
     $jumlah_halaman =$_POST['jumlah_halaman'];
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (isset($_FILES['gambar_buku']) && $_FILES['gambar_buku']['error'] == 0) {
-            $upload_dir = 'uploads/'; // direktori tujuan penyimpanan file
-            $file_name = $_FILES['gambar_buku']['name'];
-            $file_tmp = $_FILES['gambar_buku']['tmp_name'];
+    
 
-    // Tampilkan data
     echo "<p><strong>Judul Buku:</strong> $judul_buku</p>";
     echo "<p><strong>Kategori:</strong> $kategori</p>";
     echo "<p><strong>Deskripsi Buku:</strong> $deskripsi</p>";
@@ -37,17 +32,7 @@
     echo "<p><strong>Jumlah Halaman:</strong> $jumlah_halaman</p>";
     echo "<p><strong>Harga:</strong> Rp. $harga</p>";
     echo "<p><strong>Stok:</strong> $stok</p>";
-    if (move_uploaded_file($file_tmp, $upload_dir)) {
-        echo "<h1>Gambar berhasil diunggah!</h1>";
-        echo "<p>Nama file: " . htmlspecialchars($file_name) . "</p>";
-        echo "<img src='" . $upload_dir . htmlspecialchars($file_name) . "' alt='Gambar Buku' />";
-    } else {
-        echo "<h1>Gagal mengunggah gambar.</h1>";
-    }
-} else {
-    echo "<h1>Tidak ada file yang diunggah atau terjadi kesalahan.</h1>";
-}
-}
+   
     ?>
 
 </body>
