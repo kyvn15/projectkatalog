@@ -1,7 +1,9 @@
 <?php
 
- require_once "koneksi.php"
-
+//  require_once ("config.php");
+require_once("koneksi.php");
+// require_once("function.php");
+require_once("form2.php");
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +31,7 @@
         JUMLAH HALAMAN : <br> <input type="text" name="jumlah_halaman"  /> <br><br>
         HARGA : <br> <input type="number" name="harga"  /> <br><br>
         STOK : <br> <input type="text" name="stok"  /> <br><br>
-        <button>SUBMIT</button>
+        <button type="submit" name="btnsubmit">SUBMIT</button>
     </div>
 </body>
 </html>

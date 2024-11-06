@@ -1,9 +1,8 @@
 <?php 
 
-require_once "koneksi.php";
-require_once "function.php";
-require_once "../admin/input_buku.php";
-require_once "form2.php";
+require "koneksi.php";
+// require "function.php";
+// require_once "../admin/input_buku.php";
+require "form2.php";
 
 
-?>
