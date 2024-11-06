@@ -22,16 +22,33 @@
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
     
+    //*  ALTERNATIF *//
 
-    echo "<p><strong>Judul Buku:</strong> $judul_buku</p>";
-    echo "<p><strong>Kategori:</strong> $kategori</p>";
-    echo "<p><strong>Deskripsi Buku:</strong> $deskripsi</p>";
-    echo "<p><strong>Penerbit:</strong> $penerbit</p>";
-    echo "<p><strong>Tanggal Terbit:</strong> $tanggal_terbit</p>";
-    echo "<p><strong>ISBN:</strong> $isbn</p>";
-    echo "<p><strong>Jumlah Halaman:</strong> $jumlah_halaman</p>";
-    echo "<p><strong>Harga:</strong> Rp. $harga</p>";
-    echo "<p><strong>Stok:</strong> $stok</p>";
+    //echo "<p><strong>Judul Buku:</strong> $judul_buku</p>";
+    //echo "<p><strong>Kategori:</strong> $kategori</p>";
+    //echo "<p><strong>Deskripsi Buku:</strong> $deskripsi</p>";
+    //echo "<p><strong>Penerbit:</strong> $penerbit</p>";
+    //echo "<p><strong>Tanggal Terbit:</strong> $tanggal_terbit</p>";
+    //echo "<p><strong>ISBN:</strong> $isbn</p>";
+    //echo "<p><strong>Jumlah Halaman:</strong> $jumlah_halaman</p>";
+    //echo "<p><strong>Harga:</strong> Rp. $harga</p>";
+    //echo "<p><strong>Stok:</strong> $stok</p>";
+
+    //*    *//
+
+    //* ARRAY ACCOCIATIVE *//
+    $data = [
+        'judul' => $judul_buku,
+        'kategori'  =>  $kategori,
+        'deskripsi' => $deskripsi,
+        'penerbit' => $penerbit,
+        'tanggal_terbit' => $tanggal_terbit,
+        'isbn' => $isbn,
+        'jumlah_halaman' => $jumlah_halaman,
+        'harga' => $harga,
+        'stok' => $stok
+    ];
+    
    
     ?>
 
