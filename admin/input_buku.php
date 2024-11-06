@@ -29,6 +29,7 @@
         JUMLAH HALAMAN : <br> <input type="text" name="jumlah_halaman"  /> <br><br>
         HARGA : <br> <input type="number" name="harga"  /> <br><br>
         STOK : <br> <input type="text" name="stok"  /> <br><br>
+        <button>SUBMIT</button>
     </div>
 </body>
 </html>
