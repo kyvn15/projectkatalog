@@ -42,6 +42,11 @@ require "function.php";
         $validasi = validasiData($data);
         if ($validasi == 0) {
             echo "data sudah lengkap siap di inputkan";
+            $result = inputbuku($data, $koneksi);
+            if ($result)
+                echo 'data sudah di inputkan';
+            else 
+                echo 'data gagal di inputkan';
         } else {
             echo "data $validasi kurang";
         }

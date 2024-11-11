@@ -2,7 +2,7 @@
     $server = "localhost" ;
     $user = "root" ;
     $pass = '' ;
-    $db = "sangraha_pustaka_db" ;
+    $db = "db_sangraha_pustaka" ;
 
     $koneksi = mysqli_connect ($server , $user , $pass , $db);
 

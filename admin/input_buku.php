@@ -17,12 +17,12 @@ require_once("form2.php");
 <body>
     <div tabel>
         <h2>Form Input Produk Sangraha Pustaka</h2>
-        <form action="form2.php" enctype="multipart/form-data" method="POST">
+        <form action="" enctype="multipart/form-data" method="POST">
         JUDUL BUKU : <br> <input type="text" name="judul_buku"  /> <br><br>
         KATEGORI : <br>
         <label>
-            <input type="radio" name="kategori" value="1" required> FIKSI
-            <input type="radio" name="kategori" value="2" required> NON-FIKSI
+            <input type="radio" name="kategori" value="fiksi" required> FIKSI
+            <input type="radio" name="kategori" value="Non-Fiksi" required> NON-FIKSI
         </label><br><br>
         DESKRIPSI BUKU : <br> <input type="textarea" name="deskripsi"  /> <br><br>
         PENERBIT : <br> <input type="text" name="penerbit"  /> <br><br>
