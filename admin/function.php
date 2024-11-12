@@ -22,15 +22,19 @@ function inputbuku($data, $koneksi)
     $jumlah_halaman = $data['jumlah_halaman'];
     $harga = $data['harga'];
     $stok = $data['stok'];
+    $pengarang = $data['pengarang'];
+    $gambar = $data['gambar'];
 
+    // echo "INSERT INTO tb_produk (judul_buku , deskripsi_buku , penerbit , tanggal_terbit , isbn, jumlah_halaman, harga , stok,kategori , pengarang) VALUES ($judul_buku, $deskripsi, $penerbit, $tanggal_terbit, $isbn, $jumlah_halaman, $harga  , $stok , $kategori , $pengarang)";
 
-$sql = "INSERT INTO tb_produk (judul_buku , deskripsi_buku , penerbit, tanggal_terbit , isbn, jumlah_halaman, harga , stok,kategori) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    // INSERT INTO tb_produk () VALUES ('abc','abc','abc','2023-12-01', 12345, 12,12,12,'abc','Fiksi','abc')
+$sql = "INSERT INTO tb_produk (judul_buku, deskripsi_buku,penerbit, tanggal_terbit, ISBN, jumlah_halaman,harga,stok,kategori, pengarang,gambar) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ? , ?,?)";
 $stmt = mysqli_prepare($koneksi, $sql);
 if ($stmt === false) {
     return "failed";
 }
 
-mysqli_stmt_bind_param($stmt, 'ssssiiiis', $judul_buku, $deskripsi, $penerbit, $tanggal_terbit, $isbn, $jumlah_halaman, $harga  , $stok , $kategori );
+mysqli_stmt_bind_param($stmt, 'ssssiiiisss', $judul_buku, $deskripsi, $penerbit, $tanggal_terbit, $isbn, $jumlah_halaman, $harga  , $stok , $kategori , $pengarang, $gambar);
 $result = mysqli_stmt_execute($stmt);
 
 if (!$result)
@@ -38,4 +42,17 @@ if (!$result)
 
 mysqli_stmt_close($stmt);
 return true;
+}
+
+// function untuk menampilkan data buku //
+
+function viewBuku($koneksi) {
+    $sql = "SELECT tb_produk.judul_buku,tb_produk.deskripsi_buku,tb_produk.penerbit,tb_produk.tanggal_terbit,tb_produk.ISBN,tb_produk.jumlah_halaman,tb_produk.harga,tb_produk.stok,tb_produk.gambar,tb_produk.kategori,tb_produk.pengarang, tb_produk.gambar as judul_buku,deskripsi_buku,penerbit,tanggal_terbit,isbn,jumlah_halaman,harga,stok,gambar,kategori,pengarang,gambar FROM tb_produk";
+    $result = mysqli_query($koneksi, $sql);
+
+    if ($result && mysqli_num_rows($result) > 0) {
+        return mysqli_fetch_all($result, MYSQLI_ASSOC);
+    } else {
+        return false;
+    }
 }

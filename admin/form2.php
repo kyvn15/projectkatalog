@@ -1,5 +1,7 @@
 <?php
 require "function.php";
+require "upload.php";
+$rootDir = $_SERVER['DOCUMENT_ROOT']."/PROJECTKATALOG/";
 
     if (isset($_POST['btnsubmit'])) {
         $judul_buku = $_POST['judul_buku'];
@@ -11,6 +13,8 @@ require "function.php";
         $jumlah_halaman = $_POST['jumlah_halaman'];
         $harga = $_POST['harga'];
         $stok = $_POST['stok'];
+        $pengarang = $_POST['pengarang'];
+        $gambar = basename($_FILES['gambar']['name']);
 
         //*  ALTERNATIF *//
 
@@ -36,18 +40,27 @@ require "function.php";
             'isbn' => $isbn,
             'jumlah_halaman' => $jumlah_halaman,
             'harga' => $harga,
-            'stok' => $stok
+            'stok' => $stok,
+            'pengarang' => $pengarang,
+            'gambar' => $gambar
         ];
 
         $validasi = validasiData($data);
-        if ($validasi == 0) {
-            echo "data sudah lengkap siap di inputkan";
+        if($validasi == 0 ){
+            // echo "data sudah lengkap siap di inputkan";
             $result = inputbuku($data, $koneksi);
-            if ($result)
-                echo 'data sudah di inputkan';
-            else 
-                echo 'data gagal di inputkan';
-        } else {
+            $folderTujuan = $rootDir."upload";
+            if($result) 
+            { 
+                $upload = tambahGambar($folderTujuan, $_FILES['gambar']);
+                if($upload) 
+                    header("location:input_buku.php?status=1");
+                else 
+                header("location:input_buku.php?status=1&errno=2");
+            }
+            else header("location:input_buku.php?errno=1");
+        }
+        else {
             echo "data $validasi kurang";
         }
     }
