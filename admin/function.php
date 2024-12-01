@@ -47,7 +47,7 @@ return true;
 // function untuk menampilkan data buku //
 
 function viewBuku($koneksi) {
-    $sql = "SELECT tb_produk.judul_buku,tb_produk.deskripsi_buku,tb_produk.penerbit,tb_produk.tanggal_terbit,tb_produk.ISBN,tb_produk.jumlah_halaman,tb_produk.harga,tb_produk.stok,tb_produk.gambar,tb_produk.kategori,tb_produk.pengarang, tb_produk.gambar as judul_buku,deskripsi_buku,penerbit,tanggal_terbit,isbn,jumlah_halaman,harga,stok,gambar,kategori,pengarang,gambar FROM tb_produk";
+    $sql = "SELECT tb_produk.produk_id, tb_produk.judul_buku,tb_produk.deskripsi_buku,tb_produk.penerbit,tb_produk.tanggal_terbit,tb_produk.ISBN,tb_produk.jumlah_halaman,tb_produk.harga,tb_produk.stok,tb_produk.gambar,tb_produk.kategori,tb_produk.pengarang, tb_produk.gambar as judul_buku,deskripsi_buku,penerbit,tanggal_terbit,isbn,jumlah_halaman,harga,stok,gambar,kategori,pengarang,gambar FROM tb_produk";
     $result = mysqli_query($koneksi, $sql);
 
     if ($result && mysqli_num_rows($result) > 0) {
@@ -55,4 +55,16 @@ function viewBuku($koneksi) {
     } else {
         return false;
     }
+}
+
+function delBuku ($koneksi, $id) {
+    $sql = "DELETE FROM tb_produk WHERE produk_id = ?";
+            // DELETE FROM `tb_produk` WHERE produk_id = ? ";
+    $stmt = mysqli_prepare($koneksi, $sql);
+
+    mysqli_stmt_bind_param($stmt, "i", $id);
+    $result = mysqli_stmt_execute($stmt);
+
+    if ($result) return true;
+    else return false;
 }

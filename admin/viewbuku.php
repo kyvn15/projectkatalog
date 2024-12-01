@@ -1,6 +1,7 @@
 <?php
 require 'koneksi.php';
-require 'function.php';
+// require 'function.php';
+require 'form2.php';
 
 ?>
 <!DOCTYPE html>
@@ -121,7 +122,7 @@ require 'function.php';
                 <td><?= $data['pengarang'] ?></td>
                 <td><?= $data['gambar'] ?> </td>
                 <td><button class="btn btn-primary">Edit</button></td>
-                <td><button class="btn btn-danger">Delete</button></td>
+                <td><a class="btn btn-danger" href="?del=<?= $data['produk_id'] ?>"> delete</a></td>
             </tr>
 
             <?php
